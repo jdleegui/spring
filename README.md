@@ -12,15 +12,29 @@ Check if the newest version installed.
 jdlee@LeeJD:~$  ~/Downloads/sts-bundle/sts-3.9.0.RELEASE/STS
 
 ```
+## Environment
+```
+Window > Preference > 
+```
 ## Create project
 ```
-File > Spring Legacy Project
-Name:SampleWebApp
-Template:Simple Spring Web Maven
+File > New > Spring MVC Project
+Name:sts_basic Next
+sts.basic.test
 Finish
 ```
 ## Update Project
 ```
 SampleWebApp > Maven > Update Project > OK
 SampleWbpApp > Run > Run AS > Maven Install
+```
+## Add project to server
+```
+Servers | Server > Pivotal tc SErver Developer > Add and Remove
+Add SampleWebApp to configured
+Run Server 
+```
+## Confirm result
+```
+http://localhost:8080/SampleWebApp/
 ```
